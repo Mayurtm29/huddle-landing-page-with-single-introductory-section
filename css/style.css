@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("../images/bg-desktop.svg");
+}
+
+.logo {
+    align-self: flex-start;
+    margin: 1.5rem 0 1.5rem 7rem;
+}
+
+.logo img {
+    width: 80%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    height: 75vh;
+    gap: 1rem;
+}
+
+.img {
+    width: 50%;
+}
+
+.img img {
+    width: 100%;
+}
+
+.text {
+    align-self: center;
+    padding: 2rem;
+    margin-left: 2rem;
+    width: 45%;
+}
+
+.text h1 {
+    color: #FFF;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    inline-size: 500px;
+    overflow-wrap: break-word;
+    margin-bottom: 1rem;
+}
+
+.text p {
+    color: rgba(255, 255, 255, 0.767);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    inline-size: 450px;
+    overflow-wrap: break-word;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 4rem;
+    color: hsl(257, 40%, 49%);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 0.8rem 5rem;
+    box-shadow: 6px 6px 10px 1px hsla(258, 35%, 19%, 0.637);
+}
+
+.btn:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+.social {
+    align-self: flex-end;
+    color: #fff;
+    gap: 1rem;
+    margin-right: 7%;
+
+}
+
+.icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    aspect-ratio: 1;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    margin: 0 1rem;
+}
+
+.icon:hover {
+    color: hsl(300, 69%, 71%);
+    border: 2px solid hsl(300, 69%, 71%);
+}
+
+@media (max-width:600px) {
+    .container {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .logo {
+        margin: 2rem 1.5rem 3rem;
+    }
+
+    .logo img {
+        width: 50%;
+    }
+
+    .text {
+        width: 100%;
+        align-self: center;
+        padding: 0;
+        margin: 2rem 0 0 0;
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 1.5rem;
+        inline-size: 300px;
+        overflow-wrap: break-word;
+        margin-inline: auto;
+    }
+
+    .text p {
+        font-size: 0.9rem;
+        inline-size: 295px;
+        margin-inline: auto;
+        margin-bottom: 2rem;
+        line-height: 1.7;
+    }
+
+    .btn {
+        padding: 0.5rem 5rem;
+    }
+    .social{
+        align-self: center;
+        margin: 3rem 0 2rem;
+    }
+    .icon{
+        margin: 0 0.3rem;
+        width: 30px;
+        border: 1px solid #fff;
+    }
+}
+@media (min-width:600px) and (max-width:800px){
+    .container {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .logo {
+        margin: 2rem 1.5rem 3rem;
+    }
+
+    .logo img {
+        width: 50%;
+    }
+    .text {
+        width: 100%;
+        align-self: center;
+        padding: 0;
+        margin: 2rem 0 0 0;
+        text-align: center;
+    }
+    .text h1 {
+        font-size: 2rem;
+        inline-size: 450px;
+        overflow-wrap: break-word;
+        margin-inline: auto;
+    }
+    .text p {
+        font-size:1.2rem;
+        inline-size: 450px;
+        overflow-wrap: break-word;
+        margin-inline: auto;
+        margin-bottom: 2rem;
+        line-height: 1.7;
+    }
+    .btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 5rem;
+    }
+    
+    .social{
+        align-self: center;
+        margin: 3rem 0 2rem;
+    }
+    .icon{
+        margin: 0 0.5rem;
+        width: 35px;
+        border: 1px solid #fff;
+    }
+
+}
+@media (min-width:800px) and (max-width:1000px){
+    .text h1 {
+        font-size: 2rem;
+        inline-size: auto;
+        overflow-wrap: break-word;
+    }
+
+}
